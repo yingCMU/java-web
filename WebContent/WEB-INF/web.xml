@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
+id="WebApp_ID" version="3.0">
+  <display-name>Test</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+        <servlet-name>HelloWorldExample</servlet-name>
+        <servlet-class>servelets.HelloWorldExample</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloWorldExample</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CreateModelServelet</servlet-name>
+        <servlet-class>servelets.CreateModelServelet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateModelServelet</servlet-name>
+        <url-pattern>/create</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ListModelServelet</servlet-name>
+        <servlet-class>servelets.ListModelServelet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListModelServelet</servlet-name>
+        <url-pattern>/list</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>GetModelServelet</servlet-name>
+        <servlet-class>servelets.GetModelServelet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetModelServelet</servlet-name>
+        <url-pattern>/getModel</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ShowChoiceServelet</servlet-name>
+        <servlet-class>servelets.ShowChoiceServelet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowChoiceServelet</servlet-name>
+        <url-pattern>/showChoice</url-pattern>
+    </servlet-mapping>
+</web-app>
